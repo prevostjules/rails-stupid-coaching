@@ -1,1 +1,15 @@
-<h1>Your a duymb man</h1>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+
+  <div class="infos">
+    <p class="question"><%= params[:question] %></p>
+    <p class="question--italic">-You</p>
+  </div>
+
+  <div class="infos--yellow">
+    <p class="question--bold"><%= @answer %></p>
+    <p class="question--italic">-Your coach</p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>

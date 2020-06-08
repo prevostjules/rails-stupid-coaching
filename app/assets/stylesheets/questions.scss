@@ -1,3 +1,49 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$color_primary: #337AB7;
+$color_secondary: #FFFFE1;
+$color_tertiary: #DDDDDD;
+
+.container {
+  margin: 3rem;
+}
+
+.infos {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid $color_tertiary;
+  &--yellow {
+    @extend .infos;
+    background: $color_secondary;
+  }
+}
+
+.question {
+  font-size: 0.8rem;
+  &--italic {
+    @extend .question;
+    font-style: italic;
+  }
+  &--bold {
+    @extend .question;
+    font-style: bold;
+  }
+}
+
+form {
+  display: flex;
+  border: 1px solid grey;
+  height: 35px;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+}
+
+.btn {
+  background: $color_primary;
+  color: white;
+  max-width: 50px;
+}
